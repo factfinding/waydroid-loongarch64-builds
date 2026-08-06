@@ -1,5 +1,7 @@
 # Waydroid builds for LoongArch64
 
+[简体中文](README_zh-CN.md) | English
+
 Experimental LineageOS 23.2 / Android 16 images for running Waydroid on
 LoongArch64 Linux hosts.
 
