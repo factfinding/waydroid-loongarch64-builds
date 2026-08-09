@@ -22,7 +22,7 @@ Android 16 镜像。
 当前版本面向以下环境：
 
 - LoongArch64 架构的 AOSC OS；
-- 支持 binder/binderfs 的 16 KiB 页面大小内核；
+- 支持 binder/binderfs 的 4 KiB 或 16 KiB 页面大小内核；
 - Wayland 桌面会话；
 - Release 中提供的修订版 Waydroid 和 LXC 软件包。
 

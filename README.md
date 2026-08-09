@@ -25,7 +25,7 @@ known issues.
 The current releases target:
 
 - AOSC OS on LoongArch64;
-- a 16 KiB page-size kernel with binder/binderfs support;
+- a 4 KiB or 16 KiB page-size kernel with binder/binderfs support;
 - a Wayland desktop session;
 - the patched Waydroid and LXC packages supplied with the release.
 
