@@ -13,6 +13,8 @@ known issues.
 ## Current status
 
 - Waydroid boots to an interactive Android desktop.
+- Current images use the Android 16 BP4A release configuration; Launcher3 and
+  the recent-apps screen have been validated on the LoongArch64 test device.
 - LoongArch64 Android applications are supported.
 - Chromium WebView and host audio are available.
 - ARM64 application translation is available through an experimental Native

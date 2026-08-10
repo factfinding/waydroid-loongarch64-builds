@@ -12,6 +12,8 @@ Android 16 镜像。
 ## 当前状态
 
 - Waydroid 可以启动并进入可交互的 Android 桌面。
+- 当前镜像使用 Android 16 BP4A 发布配置；Launcher3 和最近任务界面已在
+  LoongArch64 测试设备上验证。
 - 支持 LoongArch64 Android 应用。
 - Chromium WebView 和宿主音频可以使用。
 - 可通过实验性的 Native Bridge 运行 ARM64 应用，但兼容性仍不完整。
