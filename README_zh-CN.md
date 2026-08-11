@@ -26,21 +26,24 @@ Android 16 镜像。
 - LoongArch64 架构的 AOSC OS；
 - 支持 binder/binderfs 的 4 KiB 或 16 KiB 页面大小内核；
 - Wayland 桌面会话；
-- Release 中提供的修订版 Waydroid 和 LXC 软件包。
+- Release 说明中链接的修订版 Waydroid 和 LXC 软件包。
 
 开发期间使用的 AOSC LXC 原始软件包在 LoongArch64 上禁用了 seccomp。除非该打包
 差异已经在上游修复，否则不能用源中的原始软件包替代 Release 提供的版本。
 
 ## 安装
 
-请从同一个 Release 下载所有必要文件，并严格按照该版本的 Release 说明进行安装。
-一个完整版本预计包含：
+请从同一个 Release 下载配套的 Android 镜像和校验文件，再按照该版本的 Release
+说明，从相应源码仓库获取宿主软件包。镜像 Release 包含：
 
 - `system.img.zst`；
 - `vendor.img.zst`；
-- 修订后的 Waydroid 宿主软件包；
-- 启用了 seccomp 的 AOSC LXC 软件包；
 - `SHA256SUMS`。
+
+配套宿主软件包与其对应源码分别发布于：
+
+- [LoongArch64 Waydroid](https://github.com/factfinding/waydroid/releases)；
+- [启用 LoongArch64 seccomp 的 AOSC LXC](https://github.com/factfinding/aosc-os-abbs/releases)。
 
 请勿混用不同 Release 的 Android 镜像或宿主软件包。替换镜像前，请备份现有的
 Waydroid 安装。

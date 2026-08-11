@@ -29,7 +29,7 @@ The current releases target:
 - AOSC OS on LoongArch64;
 - a 4 KiB or 16 KiB page-size kernel with binder/binderfs support;
 - a Wayland desktop session;
-- the patched Waydroid and LXC packages supplied with the release.
+- the patched Waydroid and LXC packages linked from the release notes.
 
 The stock AOSC LXC package used during development disabled seccomp on
 LoongArch64 and cannot be substituted for the release package unless that
@@ -37,14 +37,19 @@ packaging difference has been fixed upstream.
 
 ## Installation
 
-Download all required files from a single release and follow the instructions
-in its release notes. A complete release is expected to contain:
+Download the matched Android images and checksum file from a single release,
+then follow its release notes to obtain the host packages from their source
+repositories. An image release contains:
 
 - `system.img.zst`;
 - `vendor.img.zst`;
-- a patched Waydroid host package;
-- an AOSC LXC package with seccomp enabled;
 - `SHA256SUMS`.
+
+The matching host packages are published separately with their corresponding
+source:
+
+- [Waydroid for LoongArch64](https://github.com/factfinding/waydroid/releases);
+- [AOSC LXC with seccomp for LoongArch64](https://github.com/factfinding/aosc-os-abbs/releases).
 
 Do not mix Android images or host packages from different releases. Back up an
 existing Waydroid installation before replacing images.
