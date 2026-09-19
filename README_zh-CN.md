@@ -9,6 +9,8 @@ Android 16 镜像。
 [Releases](https://github.com/factfinding/waydroid-loongarch64-builds/releases)
 页面下载文件，并查看各版本对应的安装说明、校验和及已知问题。
 
+最新版本：[v0.2.3 — JIT、应用兼容与原生媒体解码更新](https://github.com/factfinding/waydroid-loongarch64-builds/releases/tag/v0.2.3-lineage-23.2)。
+
 ## 当前状态
 
 - Waydroid 可以启动并进入可交互的 Android 桌面。
@@ -24,7 +26,7 @@ Android 16 镜像。
 当前版本面向以下环境：
 
 - LoongArch64 架构的 AOSC OS；
-- 支持 binder/binderfs 的 4 KiB 或 16 KiB 页面大小内核；
+- 支持 binder/binderfs 的 **4 KiB** 页面大小内核，以兼容 ARM64 应用；
 - Wayland 桌面会话；
 - Release 说明中链接的修订版 Waydroid 和 LXC 软件包。
 
@@ -38,7 +40,8 @@ Android 16 镜像。
 
 - `system.img.zst`；
 - `vendor.img.zst`；
-- `SHA256SUMS`。
+- `SHA256SUMS` 和 `SHA256SUMS-images`；
+- 源码/构建索引及上游许可证通知。
 
 配套宿主软件包与其对应源码分别发布于：
 

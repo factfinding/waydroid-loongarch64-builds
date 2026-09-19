@@ -10,6 +10,8 @@ This repository is the distribution point for tested binary releases. See the
 page for downloads, version-specific installation instructions, checksums, and
 known issues.
 
+Latest: [v0.2.3 — JIT, compatibility and native media updates](https://github.com/factfinding/waydroid-loongarch64-builds/releases/tag/v0.2.3-lineage-23.2).
+
 ## Current status
 
 - Waydroid boots to an interactive Android desktop.
@@ -27,7 +29,7 @@ known issues.
 The current releases target:
 
 - AOSC OS on LoongArch64;
-- a 4 KiB or 16 KiB page-size kernel with binder/binderfs support;
+- a **4 KiB** page-size kernel with binder/binderfs support for ARM64 applications;
 - a Wayland desktop session;
 - the patched Waydroid and LXC packages linked from the release notes.
 
@@ -43,7 +45,8 @@ repositories. An image release contains:
 
 - `system.img.zst`;
 - `vendor.img.zst`;
-- `SHA256SUMS`.
+- `SHA256SUMS` and `SHA256SUMS-images`;
+- source/build indexes and upstream license notices.
 
 The matching host packages are published separately with their corresponding
 source:
